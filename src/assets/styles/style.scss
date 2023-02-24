@@ -1,0 +1,41 @@
+@import 'variables.scss';
+@import 'settings.scss';
+
+.dark-link {
+	display: block;
+	text-align: right;
+	width: 100%;
+	margin-bottom: 0.5rem;
+	text-decoration: none;
+	color: $black;
+	transition: color 0.3s ease;
+
+	&:hover {
+		color: darken($accent, 10%);
+	}
+}
+
+.wrapper-inner-page {
+	padding: 40px 30px;
+	text-align: center;
+	max-width: 560px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+// chrome, safari, edge, opera
+inner::-webkit-outer-spin-button,
+inner::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+// firefox
+inner[type='number'] {
+	-moz-appearance: textfield;
+}
+
+.error {
+	color: #8d2d3d;
+	font-size: 1rem;
+}
